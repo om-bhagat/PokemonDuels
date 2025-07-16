@@ -7,8 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to the Pokemon Name Duel!</h1>
-    <h2>This is where you can play against your friends or random friends or even a robot.</h2>
-    <a href="pokemon-duel/"><button onclick="location.href='index.html'">Play against a person on the same device</button></a>
-    <a href="person-vs-robot/"><button onclick="location.href='index.html'">Play against a robot</button></a>
+    <h1> Pokemon Name Duel</h1>
+    <div id="turn"> Player1's Turn</div>
+    <input type="text" id="pokemonInput" placeholder="Enter Pokemon Name" />
+    <button onclick="submitPokemon()">Submit</button>
+    <div id="result"></div>
+    <div id="usedList"></div>
+    <div id="timer">Timer Left: 10</div>
+    <script src="script.js"></script>
+    <div id="timer-container">
+    <div id="timer-bar"></div>
+    </div>
+    <div id = "timer-text"> Time left: 10</div>
+    <div id="scoreboard">
+        <span id="player1-score">Player 1: 0</span>
+        <span id="player2-score" style="margin-left: 20px;">Player 2: 0</span>
+    </div>
+    <button id ="Back" onclick ="location.href='http://127.0.0.1:5500/index.html'">Back to Home</button>
 </body>
+</html>
